@@ -6,23 +6,17 @@ class GetsAdmin(admin.ModelAdmin):
     list_display = [
         'name',
         'number',
-        'Email',
-        'label',
+        'email',
     ]
     list_display_links = [
         'name',
         'number',
-        'Email',
-        'label',
-    ]
-    list_filter = [
-        'label',
+        'email',
     ]
     search_fields = [
         'name',
         'number',
-        'Email',
-        'label',
+        'email',
     ]
 
 

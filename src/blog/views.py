@@ -13,6 +13,7 @@ class GetsView(TemplateView):
         form = GetsViewForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
+            messages.info(self.request, "Thanks you for contact us.")
             return redirect("/")
         context = self.get_context_data(form=form)
         return self.render_to_response(context)
